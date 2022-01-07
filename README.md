@@ -7,7 +7,7 @@ This repo is an example of bindings created via SWIG between C++ example
 ### Generate SWIG bindings
 
 ```bash
-swig -go -c++ -intgosize 64 -outdir src/go/ src/bindings/gocpp.i
+swig -go -cgo -c++ -intgosize 64 -outdir gocpp gocpp/gocpp.i
 ```
 
 ### Build gocpp.go wrapper
