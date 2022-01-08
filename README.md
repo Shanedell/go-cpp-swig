@@ -1,5 +1,7 @@
 # SWIG Go and C++ Example
 
+![Build Status](https://github.com/Shanedell/go-cpp-swig/workflows/Test%20Goycpp%20Module/badge.svg)
+
 This repo is an example of bindings created via SWIG between C++ example
 
 ## Requirements
