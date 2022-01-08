@@ -1,0 +1,16 @@
+version: "3.5"
+
+services:
+  module-build:
+    build:
+      context: .
+      dockerfile: .
+    image: go-cpp-mod:local
+    container_name: go_cpp_mod_build
+
+  module-test:
+    image: go-cpp-mod:local
+    container_name: go_cpp_mod_test
+    depends_on:
+      - module-build
+    command: go test -v
