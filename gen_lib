@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+swig -go -cgo -c++ -intgosize 64 -outdir gocpp gocpp/gocpp.i
+cd gocpp && g++ -std=c++11 -fPIC -c gocpp.cpp gocpp_wrap.cxx && cd ../
+g++ -shared -o gocpp/_gocpp.so gocpp/gocpp.o gocpp/gocpp_wrap.o

@@ -1,5 +1,11 @@
 .vscode
 
-# Auto generated files by Swig:
-gocpp.go
-gocpp_wrap.cxx
+# Swig Generated files
+gocpp/gocpp.go
+gocpp/gocpp_wrap.cxx
+
+# Binaries
+*.o
+*.dylib
+*.so
+*.dll

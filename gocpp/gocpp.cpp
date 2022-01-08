@@ -1,24 +1,19 @@
+int Sum(int x, int y) {
+    return x+y;
+}
 
-class Math {
-    double aVariable = 100;
+int Diff(int x, int y) {
+    return x-y;
+}
 
-    int Sum(int x, int y) {
-        return x+y;
-    }
+int Product(int x, int y) {
+    return x*y;
+}
 
-    int diff(int x, int y) {
-        return x-y;
-    }
+int Quotient(int x, int y) {
+    return x/y;
+}
 
-    int product(int x, int y) {
-        return x*y;
-    }
-
-    int quotient(int x, int y) {
-        return x/y;
-    }
-
-    int modulus(int x, int y) {
-        return x%y;
-    }
-};
+int Modulus(int x, int y) {
+    return x%y;
+}
