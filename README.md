@@ -1,6 +1,6 @@
 # SWIG Go and C++ Example
 
-![Build Status](https://github.com/Shanedell/go-cpp-swig/workflows/Test%20Goycpp%20Module/badge.svg)
+![Build Status](https://github.com/Shanedell/go-cpp-swig/workflows/Test%20Gocpp%20Module/badge.svg)
 
 This repo is an example of bindings created via SWIG between C++ example
 
@@ -46,6 +46,11 @@ g++ -shared -o gocpp/_gocpp.so gocpp/gocpp.o gocpp/gocpp_wrap.o
 go test -v
 ```
 
-## Compiling go bindings - Auto
+## Compiling python bindings - Auto
 
-Using the `gen_lib` script you can easily generate the swig bindings, generate the c++ binary file and the library file.
+Two Options:
+
+- 1.) You can run the `gen_lib` file locally and everything will be built
+- 2.) Run `docker-compose up -d --build`
+  - Creates a container that builds all the bindings, creates the c++ binary and creates the library file
+  - Creates another container once the build one finishes that runs the tests
