@@ -41,7 +41,7 @@ g++ -shared -o gocpp/_gocpp.so gocpp/gocpp.o gocpp/gocpp_wrap.o
 ### Test library
 
 ```bash
-pipenv run test -v
+go test -v
 ```
 
 ## Compiling go bindings - Auto
